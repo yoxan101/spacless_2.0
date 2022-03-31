@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
+import Button from './Button'
 
 const Hero = () => {
   const letter = useRef([])
@@ -9,6 +10,7 @@ const Hero = () => {
   const tablet = useRef()
   const tabletKeybord = useRef()
   const textContainer = useRef()
+  const contactUsBtn = useRef()
 
   letter.current = []
 
@@ -27,7 +29,7 @@ const Hero = () => {
       scale: 0.5,
       opacity: 0,
     }, {
-      scale: 1.5,
+      scale: 1.8,
       opacity: 1,
       duration: 1.6,
       ease: 'Power4.easeOut',
@@ -35,8 +37,8 @@ const Hero = () => {
       opacity: 0,
     }, {
       opacity: 1,
-      duration: 1.3,
-      stagger: 0.1,
+      duration: 1.2,
+      stagger: 0.05,
       ease: 'Power4.easeOut',
     }, '-=0.7').to(tabletKeybord.current, {
       y: '100%',
@@ -48,10 +50,17 @@ const Hero = () => {
       duration: 1.5,
     },'-=0.8').to(textContainer.current,{
       y: '-50%',
-      x: '30px',
-      scale: 1.4,
+      x: '35px',
+      scale: 1.6,
       duration: 0.5,
-    }, '-=1.5')
+    }, '-=1.5').fromTo(contactUsBtn.current, {
+      opacity: 0,
+    },{
+      y: '250px',
+      opacity: 1,
+      duration: 1,
+      ease: 'Power4.easeOut',
+    }, '-=1')
   })
 
   return (
@@ -104,6 +113,9 @@ const Hero = () => {
           <rect y="280" width="229" height="26" rx="13" fill="#324D5B" />
           <path d="M123.335 293C123.335 298.247 119.081 302.5 113.835 302.5C108.588 302.5 104.335 298.247 104.335 293C104.335 287.753 108.588 283.5 113.835 283.5C119.081 283.5 123.335 287.753 123.335 293Z" fill="#243137" />
         </svg>
+        <div className='contanctUs'>
+          <Button text="Contact Us!" reference={contactUsBtn} />
+        </div>
     </div>
   )
 }

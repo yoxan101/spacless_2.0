@@ -10,6 +10,7 @@ const Button = (props) => {
       width: props.width,
       fontSize: '1.5rem',
       fontWeight: "bold",
+      letterSpacing: '1px'
       }}>
         {props.text}
     </button>

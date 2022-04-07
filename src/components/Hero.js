@@ -64,7 +64,7 @@ const Hero = () => {
   })
 
   return (
-    <div className='welcomeText'>
+    <div className='Hero'>
         <div className="textContainer" ref={textContainer}>
           <span className='letter' ref={addLetterToRefs}>S</span>
           <span className='letter' ref={addLetterToRefs}>t</span>

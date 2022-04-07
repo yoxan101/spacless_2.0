@@ -27,7 +27,7 @@ html, body {
   border-radius: 50%;
   background: linear-gradient(135deg, #11698e 40%, #16c79a 110%);
   position: absolute;
-  z-index: 0;
+  z-index: 2;
 }
 
 .App .navBar {
@@ -108,32 +108,24 @@ html, body {
   height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
-.App .Content .welcomeText {
+.App .Content .Hero {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 150px;
-  width: 50vw;
+  width: 100vw;
   text-align: left;
   height: 100vh;
 }
 
-.App .Content .welcomeText .btn {
+.App .Content .Hero .textContainer {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 10;
-}
-
-.App .Content .welcomeText .textContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  left: 25%;
   -webkit-transform: translate(-50%, -130%);
           transform: translate(-50%, -130%);
   width: 300px;
@@ -142,10 +134,10 @@ html, body {
   color: #b8d3e0;
 }
 
-.App .Content .welcomeText svg {
+.App .Content .Hero svg {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   -webkit-transform: translate(-50%, -50%) scale(1.8);
           transform: translate(-50%, -50%) scale(1.8);
   display: block;
@@ -153,7 +145,16 @@ html, body {
   z-index: 50;
 }
 
-.App .Content .welcomeText .letter {
+.App .Content .Hero .btn {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.App .Content .Hero .letter {
   display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

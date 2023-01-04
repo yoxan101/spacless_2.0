@@ -43,6 +43,7 @@ const Content = () => {
           <Bubbles size="200px" horPosition="70%" verPosition="30%" opacity="0.2" reference={addBublesToRefs}></Bubbles>
           <Bubbles size="150px" horPosition="70%" verPosition="55%" opacity="0.2" reference={addBublesToRefs}></Bubbles>
           <Bubbles size="50px" horPosition="80%" verPosition="50%" opacity="0.2" reference={addBublesToRefs}></Bubbles>
+          <Bubbles size="50px" horPosition="90%" verPosition="45%" opacity="0.2" reference={addBublesToRefs}></Bubbles>
         </div>
         {currentComponent}
     </div>

@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Varela Round', sans-serif;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
 html, body {
@@ -14,13 +13,11 @@ html, body {
 .App {
   text-align: center;
 }
-
 .App .bubbleContainer {
   height: 100vh;
   width: 100vw;
   position: relative;
 }
-
 .App .bubbleContainer .bubble {
   width: 50px;
   height: 50px;
@@ -29,7 +26,6 @@ html, body {
   position: absolute;
   z-index: 2;
 }
-
 .App .navBar {
   height: 100vh;
   width: 100px;
@@ -39,7 +35,6 @@ html, body {
   padding: 10px;
   z-index: 10000;
 }
-
 .App .navBar .logoContainer {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -52,109 +47,83 @@ html, body {
   left: 0;
   top: 20px;
 }
-
 .App .navBar .logoContainer span {
   font-size: 15px;
   color: white;
 }
-
 .App .navBar .logoContainer span:nth-child(2) {
   color: #16c79a;
 }
-
 .App .navBar .navBarIcons {
   position: absolute;
   top: 50%;
   left: 50%;
   height: 400px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -ms-grid;
+  transform: translate(-50%, -50%);
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 5;
-      grid-template-rows: 5;
+  grid-template-columns: 1;
+  grid-template-rows: 5;
   grid-row-gap: initial;
 }
-
 .App .navBar .navBarIcons .icon {
   margin: auto;
 }
-
 .App .navBar .navBarIcons .icon a {
   display: block;
   cursor: pointer;
-  -webkit-filter: opacity(0.7);
-          filter: opacity(0.7);
-  -webkit-transition: .15s ease;
-  transition: .15s ease;
+  filter: opacity(0.7);
+  transition: 0.15s ease;
 }
-
 .App .navBar .navBarIcons .icon a svg {
   width: 30px;
   height: 30px;
   fill: #508cc0;
 }
-
 .App .navBar .navBarIcons .icon a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-filter: opacity(1);
-          filter: opacity(1);
+  transform: scale(1.1);
+  filter: opacity(1);
 }
-
 .App .Content {
   height: 100vh;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-
 .App .Content .Hero {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 150px;
   width: 100vw;
   text-align: left;
   height: 100vh;
 }
-
 .App .Content .Hero .textContainer {
   position: absolute;
   top: 50%;
   left: 25%;
-  -webkit-transform: translate(-50%, -130%);
-          transform: translate(-50%, -130%);
+  transform: translate(-50%, -130%);
   width: 300px;
   font-size: 35px;
   z-index: 100;
   color: #b8d3e0;
 }
-
 .App .Content .Hero svg {
   position: absolute;
   top: 50%;
   left: 25%;
-  -webkit-transform: translate(-50%, -50%) scale(1.8);
-          transform: translate(-50%, -50%) scale(1.8);
+  transform: translate(-50%, -50%) scale(1.8);
   display: block;
   overflow: hidden;
   z-index: 50;
 }
-
 .App .Content .Hero .btn {
   position: absolute;
   top: 50%;
   left: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
 }
-
 .App .Content .Hero .letter {
   display: inline-block;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

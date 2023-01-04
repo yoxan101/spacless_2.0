@@ -1,7 +1,7 @@
 import Header from './Header'
 import Bubbles from './Bubbles'
-import Button from './Button'
-import Hero from './Hero'
+import Hero from './HeroPage'
+import AboutPage from './AboutPage'
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 
@@ -13,7 +13,7 @@ const Content = () => {
   if(window.location.pathname == "/"){
     currentComponent = <Hero/>
   }else if(window.location.pathname == "/about"){
-    currentComponent = <Button/>
+    currentComponent = <AboutPage/>
   }
 
   const bubblesAnimation = useRef([])

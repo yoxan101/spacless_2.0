@@ -1,7 +1,7 @@
 import Header from './Header'
 import Bubbles from './Bubbles'
-import Hero from './HeroPage'
-import AboutPage from './AboutPage'
+import Hero from './pages/HeroPage'
+import AboutPage from './pages/AboutPage'
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 
@@ -10,9 +10,9 @@ const Content = () => {
   let currentComponent;
 
   /// simple routing
-  if(window.location.pathname == "/"){
+  if(window.location.pathname === "/"){
     currentComponent = <Hero/>
-  }else if(window.location.pathname == "/about"){
+  }else if(window.location.pathname === "/about"){
     currentComponent = <AboutPage/>
   }
 

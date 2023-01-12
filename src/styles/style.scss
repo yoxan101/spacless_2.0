@@ -149,5 +149,40 @@ html, body{
         }
       }
     }
+
+    .contactUsCon{
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .contactUsForm{
+
+        height: 300px;
+        width: 300px;
+
+
+        #contactUs{
+          color: $White;
+
+          .contactFormInput{
+            height: 50px;
+            width: 300px;
+            font-size: 1.2rem;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 2px solid $DarkBlue;
+            background-color: $LightBlue;
+            color: $White;
+            
+            &::placeholder{
+              color: $White;  
+            }
+          }
+        }
+      }
+    }
 }
   

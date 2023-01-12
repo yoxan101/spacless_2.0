@@ -1,9 +1,12 @@
 import Header from './Header'
 import Bubbles from './Bubbles'
-import Hero from './pages/HeroPage'
-import AboutPage from './pages/AboutPage'
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
+
+// importing content pages
+import Hero from './pages/HeroPage'
+import AboutPage from './pages/AboutPage'
+import ContactUs from './pages/ContactUs'
 
 const Content = () => {
 
@@ -14,6 +17,8 @@ const Content = () => {
     currentComponent = <Hero/>
   }else if(window.location.pathname === "/about"){
     currentComponent = <AboutPage/>
+  } else if(window.location.pathname === "/contact"){
+    currentComponent = <ContactUs/>
   }
 
   const bubblesAnimation = useRef([])

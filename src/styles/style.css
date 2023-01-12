@@ -126,4 +126,37 @@ html, body {
 }
 .App .Content .Hero .letter {
   display: inline-block;
+}
+.App .contactUsCon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.App .contactUsCon .contactUsForm {
+  height: 300px;
+  width: 300px;
+}
+.App .contactUsCon .contactUsForm #contactUs {
+  color: #b8d3e0;
+}
+.App .contactUsCon .contactUsForm #contactUs .contactFormInput {
+  height: 50px;
+  width: 300px;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #19456b;
+  background-color: #11698e;
+  color: #b8d3e0;
+}
+.App .contactUsCon .contactUsForm #contactUs .contactFormInput::-moz-placeholder {
+  color: #b8d3e0;
+}
+.App .contactUsCon .contactUsForm #contactUs .contactFormInput:-ms-input-placeholder {
+  color: #b8d3e0;
+}
+.App .contactUsCon .contactUsForm #contactUs .contactFormInput::placeholder {
+  color: #b8d3e0;
 }/*# sourceMappingURL=style.css.map */
